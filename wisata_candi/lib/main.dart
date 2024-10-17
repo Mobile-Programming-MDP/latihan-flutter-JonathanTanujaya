@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:wisata_candi/models/candi.dart';
 
 void main() {
-  runApp(const  ());
+  runApp(const MainApp());
 }
 
 class MainApp extends StatelessWidget {
