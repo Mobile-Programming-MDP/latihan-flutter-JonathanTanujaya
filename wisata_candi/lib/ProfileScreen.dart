@@ -14,6 +14,20 @@ class _ProfileScreenState extends State<ProfileScreen> {
   String userName = ''; // Example username
   int favoriteCandiCount = 0;
 
+  //5. implementasi fungsi signIn
+  void signIn() {
+    setState(() {
+      isSignedIn = !isSignedIn;
+    });
+  }
+
+  //6. implementasi fungsi signOut
+  void signOut() {
+    setState(() {
+      isSignedIn = !isSignedIn;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -75,7 +89,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           Text(
                             'Pengguna',
                             style: TextStyle(
-                              fontSize: 18, 
+                              fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),
                           )
@@ -104,7 +118,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           Text(
                             'Nama',
                             style: TextStyle(
-                              fontSize: 18, 
+                              fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),
                           )
@@ -133,7 +147,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           Text(
                             'Favorite',
                             style: TextStyle(
-                              fontSize: 18, 
+                              fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),
                           )
@@ -148,6 +162,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     ),
                   ],
                 ),
+                isSignedIn
+                    ? TextButton(onPressed: signOut, child: Text('Sign Out'))
+                    : TextButton(onPressed: signIn, child: Text('Sign In')),
               ],
             ),
           ),
