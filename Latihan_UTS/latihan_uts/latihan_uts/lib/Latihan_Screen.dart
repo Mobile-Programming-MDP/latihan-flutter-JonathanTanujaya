@@ -52,11 +52,9 @@ class LatihanScreen extends StatelessWidget {
                 padding: EdgeInsets.all(16),
                 child: Column(
                   children: [
-                    //TODO : baris berisi info
                     Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        //kiri status dan akreditasi
                         Expanded(
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -87,95 +85,76 @@ class LatihanScreen extends StatelessWidget {
                             ],
                           ),
                         ),
-                        //kanan tanggal berdiri dan jumlah mahasiswa
                         Expanded(
-                            child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Tanggal Berdiri',
-                              style: TextStyle(color: Colors.white),
-                            ),
-                            Text(
-                              "9 April 2021",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                color: Colors.white,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Tanggal Berdiri',
+                                style: TextStyle(color: Colors.white),
                               ),
+                              Text(
+                                "9 April 2021",
+                                style: TextStyle(
+                                  fontWeight: FontWeight.bold,
+                                  color: Colors.white,
+                                ),
+                              ),
+                              SizedBox(
+                                height: 8,
+                              ),
+                              Text(
+                                "Jumlah Mahasiswa",
+                                style: TextStyle(color: Colors.white),
+                              ),
+                              Text(
+                                "5000",
+                                style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      height: 8,
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          children: [
+                            Icon(
+                              Icons.phone,
+                              color: Colors.white,
                             ),
                             SizedBox(
-                              height: 8,
+                              width: 4,
                             ),
                             Text(
-                              "Jumlah Mahasiswa",
+                              "0711-376400",
                               style: TextStyle(color: Colors.white),
                             ),
-                            Text(
-                              "5000",
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontWeight: FontWeight.bold,
-                              ),
-                            ),
                           ],
-                        )),
-                        SizedBox(
-                          height: 8,
                         ),
                         Row(
-                          crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Expanded(
-                                child: Row(
-                              children: [
-                                Icon(
-                                  Icons.phone,
-                                  color: Colors.white,
-                                ),
-                                SizedBox(
-                                  width: 4,
-                                ),
-                                Text(
-                                  "0711-376400",
-                                  style: TextStyle(color: Colors.white),
-                                ),
-                              ],
-                            )),
-                          Expanded(
-                                child: Row(
-                              children: [
-                                Icon(
-                                  Icons.mail,
-                                  color: Colors.white,
-                                ),
-                                SizedBox(
-                                  width: 4,
-                                ),
-                                Text(
-                                  "kuliah@mdp.ac.id",
-                                  style: TextStyle(color: Colors.white),
-                                ),
-                              ],
-                            )),
-                            Expanded(
-                                child: Row(
-                              children: [
-                                Icon(
-                                  Icons.phone,
-                                  color: Colors.white,
-                                ),
-                                SizedBox(
-                                  width: 4,
-                                ),
-                                Text(
-                                  "0711-376400",
-                                  style: TextStyle(color: Colors.white),
-                                ),
-                              ],
-                            )),
-
+                            Icon(
+                              Icons.mail,
+                              color: Colors.white,
+                            ),
+                            SizedBox(
+                              width: 4,
+                            ),
+                            Text(
+                              "kuliah@mdp.ac.id",
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ],
-                        )
+                        ),
                       ],
                     ),
                   ],
